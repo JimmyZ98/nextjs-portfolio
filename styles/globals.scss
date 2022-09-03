@@ -1,9 +1,11 @@
+@use "../styles/partials/colors" as *;
+@use "../styles/partials/fonts" as *;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: RobotoMono, sans-serif;
 }
 
 a {
@@ -13,6 +15,10 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
 }
 
 @media (prefers-color-scheme: dark) {
