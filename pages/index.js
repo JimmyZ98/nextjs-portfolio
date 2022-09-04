@@ -1,7 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
-import Header from "../components/header";
+import Header from "../components/Header/header";
+import techlogos from "../data/techlogos.json";
+import TechLogo from "../components/TechLogo/techlogo";
 
 export default function Home() {
   return (
@@ -25,15 +27,14 @@ export default function Home() {
       </section>
       <section id="skills" className={styles.containerContent}>
         <div className={styles.main}>
-          <h2>skills</h2>
+          <div className={styles.subheading}>
+            <h2>SKILLS</h2>
+            <hr className={styles.subheadingLine} />
+          </div>
           <div className={styles.cardContainer}>
-            <div className={styles.card}>
-              <Image
-                src="/../public/images/techlogos/html5.png"
-                width={50}
-                height={50}
-              />
-            </div>
+            {techlogos.map((logo) => (
+              <TechLogo key={logo.id} logo={logo} />
+            ))}
           </div>
         </div>
       </section>

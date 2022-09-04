@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../styles/Header.module.scss";
+import styles from "./Header.module.scss";
 
 function Header() {
   return (
@@ -9,15 +9,8 @@ function Header() {
           <Image
             src="/../public/images/logo-transparent.png"
             alt="logo open"
-            width={20}
-            height={10}
-          />
-          JIMMY
-          <Image
-            src="/../public/images/logo2-transparent.png"
-            alt="logo close"
-            width={20}
-            height={10}
+            width={35}
+            height={25}
           />
         </div>
         <ul className={styles.nav}>

@@ -1,6 +1,27 @@
 @use "./partials/colors" as *;
 @use "./partials/mixins" as *;
 
+//--------------general-------------------->
+.subheading {
+  display: flex;
+  flex-direction: row;
+  color: $primary-highlight;
+  font-size: 1.5rem;
+
+  @include desktop {
+    margin-bottom: 2rem;
+  }
+  &Line {
+    width: 100%;
+    height: 1px;
+    margin: auto 0;
+    margin-left: 40%;
+    background-color: $primary-highlight;
+    border: none;
+  }
+}
+
+// ----------------hero ---------------------->
 .container {
   background: linear-gradient($primary-color, $primary-dark);
   padding: 1rem;
@@ -9,10 +30,11 @@
   }
 }
 .main {
-  min-height: 90vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   color: white;
+  justify-content: center;
   @include desktop {
     max-width: 65rem;
     margin: 0 auto;
@@ -30,6 +52,10 @@
 
 .introText {
   font-weight: 400;
+  font-size: 1rem;
+  @include desktop {
+    font-size: 1.5rem;
+  }
 }
 
 .containerContent {
@@ -40,16 +66,30 @@
   }
 }
 
+// ----------skills section------------------->
+
 .card {
-  margin: 1rem;
-  padding: 0.5rem;
-  background-color: $primary-light;
-  height: 4.25rem;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  display: inline-block;
+  background: white;
+  border-radius: 4px;
+  margin: 0.5rem;
+  @include desktop {
+    margin: 1rem;
+  }
 }
 
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.cardImage {
+  height: 3rem;
+  @include desktop {
+    height: 5rem;
+  }
+}
+//------------------------------------------>
 .highlight {
   color: $primary-highlight;
 }

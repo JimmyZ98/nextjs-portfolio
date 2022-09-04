@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "url": "/images/techlogos/html.svg"
+  },
+  {
+    "id": 2,
+    "url": "/images/techlogos/css.svg"
+  },
+  {
+    "id": 3,
+    "url": "/images/techlogos/javascript.svg"
+  },
+  {
+    "id": 4,
+    "url": "/images/techlogos/python.svg"
+  },
+  {
+    "id": 5,
+    "url": "/images/techlogos/node.svg"
+  },
+  {
+    "id": 6,
+    "url": "/images/techlogos/express.svg"
+  },
+  {
+    "id": 7,
+    "url": "/images/techlogos/react.svg"
+  },
+  {
+    "id": 8,
+    "url": "/images/techlogos/next-js.svg"
+  },
+  {
+    "id": 9,
+    "url": "/images/techlogos/typescript.svg"
+  },
+  {
+    "id": 10,
+    "url": "/images/techlogos/mysql.svg"
+  },
+  {
+    "id": 11,
+    "url": "/images/techlogos/sass.svg"
+  }
+]

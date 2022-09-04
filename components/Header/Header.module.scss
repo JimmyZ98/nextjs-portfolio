@@ -1,5 +1,5 @@
-@use "./partials/colors" as *;
-@use "./partials/mixins" as *;
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/mixins" as *;
 
 .header {
   background: $primary-color;
