@@ -16,7 +16,7 @@ export default function Home() {
       <Header />
       <section className={styles.container}>
         <div className={styles.main}>
-          <h2 className={styles.introText}>Hi, my name is</h2>
+          <h2 className={styles.introText}>Hello, my name is</h2>
           <h1 className={styles.introName}>Jimmy Zhen</h1>
           <h2 className={styles.introText}>
             I'm an accountant turned{" "}
@@ -28,7 +28,7 @@ export default function Home() {
       <section id="skills" className={styles.containerContent}>
         <div className={styles.main}>
           <div className={styles.subheading}>
-            <h2>SKILLS</h2>
+            <h2 className={styles.subheadingText}>SKILLS</h2>
             <hr className={styles.subheadingLine} />
           </div>
           <div className={styles.cardContainer}>

@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Header.module.scss";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 export default function NavLinks(props) {
   const animateFrom = { opacity: 0, y: -40 };
@@ -18,9 +19,16 @@ export default function NavLinks(props) {
         transition={{ delay: 0.05 }}
         onClick={() => props.isMobile && props.closeMobileMenu()}
       >
-        <a href="#skills" className={styles.navText}>
+        <Link
+          to="skills"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+          className={styles.navText}
+        >
           SKILLS
-        </a>
+        </Link>
       </motion.li>
       <motion.li
         initial={animateFrom}
@@ -28,9 +36,16 @@ export default function NavLinks(props) {
         transition={{ delay: 0.2 }}
         onClick={() => props.isMobile && props.closeMobileMenu()}
       >
-        <a href="#projects" className={styles.navText}>
+        <Link
+          to="projects"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+          className={styles.navText}
+        >
           PROJECTS
-        </a>
+        </Link>
       </motion.li>
       <motion.li
         initial={animateFrom}
@@ -38,9 +53,16 @@ export default function NavLinks(props) {
         transition={{ delay: 0.35 }}
         onClick={() => props.isMobile && props.closeMobileMenu()}
       >
-        <a href="#contact" className={styles.navText}>
+        <Link
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+          className={styles.navText}
+        >
           CONTACT
-        </a>
+        </Link>
       </motion.li>
       <motion.li
         initial={animateFrom}
@@ -48,9 +70,16 @@ export default function NavLinks(props) {
         transition={{ delay: 0.5 }}
         onClick={() => props.isMobile && props.closeMobileMenu()}
       >
-        <a href="" className={styles.navText}>
+        <Link
+          to=""
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+          className={styles.navText}
+        >
           RESUME
-        </a>
+        </Link>
       </motion.li>
     </motion.ul>
   );
