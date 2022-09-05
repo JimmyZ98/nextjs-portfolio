@@ -1,5 +1,7 @@
 import Image from "next/image";
 import styles from "./Header.module.scss";
+import MobileNavigation from "./MobileNavigation";
+import Navigation from "./Navigation";
 
 function Header() {
   return (
@@ -13,20 +15,8 @@ function Header() {
             height={25}
           />
         </div>
-        <ul className={styles.nav}>
-          <li className={styles.navText}>
-            <a href="#skills">SKILLS</a>
-          </li>
-          <li className={styles.navText}>
-            <a href="#projects">PROJECTS</a>
-          </li>
-          <li className={styles.navText}>
-            <a href="#contact">CONTACT</a>
-          </li>
-          <li className={styles.navText}>
-            <a href="">RESUME</a>
-          </li>
-        </ul>
+        <Navigation />
+        <MobileNavigation />
       </div>
     </div>
   );

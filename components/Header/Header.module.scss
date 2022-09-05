@@ -6,7 +6,9 @@
 }
 
 .headerContainer {
+  height: 8rem;
   display: flex;
+  align-items: center;
   position: relative;
   color: white;
   padding: 1rem;
@@ -19,12 +21,28 @@
   display: flex;
 }
 
-.nav {
+.navText {
+  &:hover {
+    color: $primary-highlight;
+    transition: color 0.5s ease;
+  }
+}
+
+//-------- desktop navbar -------->
+.navigation {
+  display: none;
+
+  @include desktop {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.navigation ul {
   display: flex;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   padding: 0;
   margin: 0;
   @include desktop {
@@ -33,7 +51,40 @@
   }
 }
 
-.navText {
+//----- mobile navbar------------>
+
+.navigationMobile {
+  display: flex;
+  align-items: center;
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.navigationMobile ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 5rem;
+  right: 0;
+  width: 100%;
+  margin: 0;
+  background-color: $primary-color;
+  box-shadow: 0 2px 2px rgba(132, 169, 140, 0.5);
+  padding-bottom: 1rem;
+}
+
+.navigationMobile li {
+  padding: 0.5rem;
+  padding-left: 20%;
+}
+
+.menuicon {
+  position: absolute;
+  right: 1rem;
+  top: 3.1rem;
+  cursor: pointer;
   &:hover {
     color: $primary-highlight;
     transition: color 0.5s ease;
