@@ -2,8 +2,10 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 import Header from "../components/Header/header";
+import Footer from "../components/Footer/footer";
 import techlogos from "../data/techlogos.json";
 import TechLogo from "../components/TechLogo/techlogo";
+import Project from "../components/Projects/projects";
 
 export default function Home() {
   return (
@@ -38,8 +40,17 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="projects">projects</section>
+      <section id="projects" className={styles.containerContent}>
+        <div className={styles.main}>
+          <div className={styles.subheadingReverse}>
+            <h2 className={styles.subheadingText}>PROJECTS</h2>
+            <hr className={styles.subheadingReverseLine} />
+          </div>
+          <Project />
+        </div>
+      </section>
       <section id="contact">contact</section>
+      <Footer />
     </div>
   );
 }
