@@ -3,6 +3,13 @@
 
 .header {
   background: $primary-color;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.headerHidden {
+  display: none;
 }
 
 .headerContainer {

@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "title": "YGOMarket",
+    "description": "A full-stack e-commerce website that allows users to buy and sell Yu-Gi-Oh cards from one another. The web app features user authentication, filtering, shopping cart, and payment processing.",
+    "techstack": "React | SASS | Node.js | Express | Stripe | MySQL | JWT",
+    "url": "http://ygomarket.herokuapp.com/home",
+    "website": "http://ygomarket.herokuapp.com/home",
+    "github": "https://github.com/JimmyZ98/YGOMarket",
+    "image": "/images/projects/ygomarket.PNG",
+    "imageHover": "/images/projects/ygomarket2.PNG"
+  },
+  {
+    "id": 2,
+    "title": "InStock",
+    "description": "A full-stack warehousing and inventory management application that allows users to view/add/edit/delete warehouses and inventories in the system. Features modal views and form validations.",
+    "techstack": "React | Javascript ES6 | SASS | Node.js | Express | JSON",
+    "url": "https://github.com/JimmyZ98/InStock",
+    "website": "",
+    "github": "https://github.com/JimmyZ98/InStock",
+    "image": "/images/projects/instock.PNG",
+    "imageHover": "/images/projects/instock2.PNG"
+  }
+]
