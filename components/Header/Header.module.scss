@@ -6,10 +6,20 @@
   width: 100%;
   position: fixed;
   top: 0;
+  left: 0;
+  transition: transform 0.5s;
+  z-index: 100;
 }
 
 .headerHidden {
-  display: none;
+  @extend .header;
+  transform: translateY(-8rem);
+}
+
+.headerScrolled {
+  box-shadow: 0 3px 8px rgba(12, 12, 12, 0.5);
+  transition-duration: 1s;
+  z-index: 100;
 }
 
 .headerContainer {

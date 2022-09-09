@@ -6,24 +6,37 @@ import Navigation from "./Navigation";
 import { motion } from "framer-motion";
 
 function Header() {
+  let lastScrollPos = 0;
+
   const [show, setShow] = useState(true);
+  const [isTop, setIsTop] = useState(true);
+
   const showNav = () => {
-    if (window.scrollY > 50) {
+    if (window.scrollY > lastScrollPos) {
       setShow(false);
     } else {
       setShow(true);
     }
+
+    if (lastScrollPos > 50) {
+      setIsTop(false);
+    } else {
+      setIsTop(true);
+    }
+
+    lastScrollPos = window.scrollY;
   };
 
   useEffect(() => {
     window.addEventListener("scroll", showNav);
-    return () => {
-      window.removeEventListener("scroll", showNav);
-    };
   }, []);
 
   return (
-    <div className={show ? styles.header : styles.headerHidden}>
+    <div
+      className={`${show ? styles.header : styles.headerHidden} ${
+        isTop ? "" : styles.headerScrolled
+      }`}
+    >
       <div className={styles.headerContainer}>
         <motion.div
           className={styles.logo}
