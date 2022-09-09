@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import styles from "./Header.module.scss";
 import MobileNavigation from "./MobileNavigation";
 import Navigation from "./Navigation";
@@ -43,11 +42,10 @@ function Header() {
           initial={{ opacity: 0, y: -150 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          <Image
-            src="/../public/images/logo-transparent.png"
-            alt="logo open"
-            width={35}
-            height={25}
+          <img
+            src="/images/logo-transparent.png"
+            alt="header logo"
+            className={styles.headerLogo}
           />
         </motion.div>
         <Navigation />
