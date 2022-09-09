@@ -120,6 +120,7 @@ export default function Home({ projects, techlogos }) {
             <a
               href="mailto: jimmy.zhen98@gmail.com"
               target="_blank"
+              rel="noreferrer"
               className={styles.contactEmail}
             >
               jimmy.zhen98@gmail.com
@@ -135,13 +136,25 @@ export default function Home({ projects, techlogos }) {
               }}
               className={styles.iconContainer}
             >
-              <a href="https://www.linkedin.com/in/jimmyzhen/" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/jimmyzhen/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <ImLinkedin size="20px" className={styles.icon} />
               </a>
-              <a href="https://github.com/JimmyZ98" target="_blank">
+              <a
+                href="https://github.com/JimmyZ98"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <ImGithub size="20px" className={styles.icon} />
               </a>
-              <a href="mailto: jimmy.zhen98@gmail.com" target="_blank">
+              <a
+                href="mailto: jimmy.zhen98@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <MdMail size="20px" className={styles.icon} />
               </a>
             </motion.div>
