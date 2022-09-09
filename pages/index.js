@@ -75,7 +75,8 @@ export default function Home({ projects, techlogos }) {
               stiffness: 100,
             }}
           >
-            I'm an accountant turned{" "}
+            I&apos;m an accountant turned
+            <span> </span>
             <span className={styles.highlight}>web developer</span>. I love
             problem solving and building cool applications!
           </motion.h2>

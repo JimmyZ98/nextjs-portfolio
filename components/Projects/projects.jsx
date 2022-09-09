@@ -21,16 +21,26 @@ export default function projects({ proj }) {
         <p className={styles.projectText}>{proj.description}</p>
         <p className={styles.projectText}>{proj.techstack}</p>
         <div className={styles.linksContainer}>
-          <a href={proj.website} target="_blank" className={styles.links}>
+          <a
+            href={proj.website}
+            target="_blank"
+            rel="noreferrer"
+            className={styles.links}
+          >
             Website
           </a>
-          <a href={proj.github} target="_blank" className={styles.links}>
+          <a
+            href={proj.github}
+            target="_blank"
+            rel="noreferrer"
+            className={styles.links}
+          >
             Github
           </a>
         </div>
       </div>
       <div className={styles.imageContainer}>
-        <a href={proj.url} target="_blank">
+        <a href={proj.url} target="_blank" rel="noreferrer">
           <div className={`${styles.image} image`}></div>
         </a>
       </div>
