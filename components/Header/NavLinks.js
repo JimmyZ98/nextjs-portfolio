@@ -3,7 +3,7 @@ import styles from "./Header.module.scss";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 
-export default function NavLinks(props) {
+export default function NavLinks({ closeMobileMenu }) {
   const animateFrom = { opacity: 0, y: -40 };
   const animateTo = { opacity: 1, y: 0 };
 
@@ -17,7 +17,7 @@ export default function NavLinks(props) {
         initial={animateFrom}
         animate={animateTo}
         transition={{ delay: 0.05 }}
-        onClick={() => props.isMobile && props.closeMobileMenu()}
+        onClick={closeMobileMenu}
       >
         <Link
           to="skills"
@@ -26,6 +26,7 @@ export default function NavLinks(props) {
           offset={50}
           duration={500}
           className={styles.navText}
+          onClick={closeMobileMenu}
         >
           SKILLS
         </Link>
@@ -34,7 +35,7 @@ export default function NavLinks(props) {
         initial={animateFrom}
         animate={animateTo}
         transition={{ delay: 0.2 }}
-        onClick={() => props.isMobile && props.closeMobileMenu()}
+        onClick={closeMobileMenu}
       >
         <Link
           to="projects"
@@ -43,6 +44,7 @@ export default function NavLinks(props) {
           offset={50}
           duration={500}
           className={styles.navText}
+          onClick={closeMobileMenu}
         >
           PROJECTS
         </Link>
@@ -51,7 +53,7 @@ export default function NavLinks(props) {
         initial={animateFrom}
         animate={animateTo}
         transition={{ delay: 0.35 }}
-        onClick={() => props.isMobile && props.closeMobileMenu()}
+        onClick={closeMobileMenu}
       >
         <Link
           to="contact"
@@ -60,6 +62,7 @@ export default function NavLinks(props) {
           offset={50}
           duration={500}
           className={styles.navText}
+          onClick={closeMobileMenu}
         >
           CONTACT
         </Link>
@@ -68,7 +71,7 @@ export default function NavLinks(props) {
         initial={animateFrom}
         animate={animateTo}
         transition={{ delay: 0.5 }}
-        onClick={() => props.isMobile && props.closeMobileMenu()}
+        onClick={closeMobileMenu}
       >
         <Link
           to=""
@@ -77,6 +80,7 @@ export default function NavLinks(props) {
           offset={50}
           duration={500}
           className={styles.navText}
+          onClick={closeMobileMenu}
         >
           RESUME
         </Link>

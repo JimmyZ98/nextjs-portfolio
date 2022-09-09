@@ -22,12 +22,14 @@ export default function MobileNavigation() {
     />
   );
 
-  const closeMobileMenu = () => setOpen(false);
+  const closeMobileMenu = () => {
+    setOpen((prevOpen) => !prevOpen);
+  };
 
   return (
     <nav className={styles.navigationMobile}>
       {open ? closeIcon : openIcon}
-      {open && <NavLinks isMobile={true} closeMobileMenu={closeMobileMenu} />}
+      {open && <NavLinks closeMobileMenu={closeMobileMenu} />}
     </nav>
   );
 }
