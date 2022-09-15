@@ -15,8 +15,8 @@
     "title": "InStock",
     "description": "A full-stack warehousing and inventory management application that allows users to view/add/edit/delete warehouses and inventories in the system. Features modal views and form validations.",
     "techstack": "React | Javascript ES6 | SASS | Node.js | Express | JSON",
-    "url": "https://github.com/JimmyZ98/InStock",
-    "website": "https://github.com/JimmyZ98/InStock",
+    "url": "https://apps-instock.herokuapp.com/warehouse",
+    "website": "https://apps-instock.herokuapp.com/warehouse",
     "github": "https://github.com/JimmyZ98/InStock",
     "image": "/images/projects/instock.PNG",
     "imageHover": "/images/projects/instock2.PNG"

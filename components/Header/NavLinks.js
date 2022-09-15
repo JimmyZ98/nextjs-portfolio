@@ -73,17 +73,14 @@ export default function NavLinks({ closeMobileMenu }) {
         transition={{ delay: 0.5 }}
         onClick={closeMobileMenu}
       >
-        <Link
-          to=""
-          spy={true}
-          smooth={true}
-          offset={50}
-          duration={500}
+        <a
+          href="https://drive.google.com/file/d/1mOsBcoC5d5s0Zneld4VkCX4S7KjSTjzw/view?usp=sharing"
           className={styles.navText}
           onClick={closeMobileMenu}
+          target="_blank"
         >
           RESUME
-        </Link>
+        </a>
       </motion.li>
     </motion.ul>
   );
