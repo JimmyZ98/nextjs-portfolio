@@ -78,6 +78,7 @@ export default function NavLinks({ closeMobileMenu }) {
           className={styles.navText}
           onClick={closeMobileMenu}
           target="_blank"
+          rel="noreferrer"
         >
           RESUME
         </a>
