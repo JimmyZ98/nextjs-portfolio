@@ -9,9 +9,11 @@ export default function projects({ proj }) {
         {`
           .image {
             background-image: url(${proj.image});
+            transition-duration: 0.5s;
           }
           .image:hover {
             background-image: url(${proj.imageHover});
+            transition-duration: 0.5s;
           }
         `}
       </style>

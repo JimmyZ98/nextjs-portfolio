@@ -77,7 +77,7 @@ export default function Home({ projects, techlogos }) {
           >
             I&apos;m an accountant turned
             <span> </span>
-            <span className={styles.highlight}>web developer</span>. I love
+            <span className={styles.highlight}>software developer</span>. I love
             problem solving and building cool applications!
           </motion.h2>
         </div>
