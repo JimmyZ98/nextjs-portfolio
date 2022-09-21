@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./Project.module.scss";
-import Image from "next/image";
 
 export default function projects({ proj }) {
   return (
@@ -9,11 +8,9 @@ export default function projects({ proj }) {
         {`
           .image {
             background-image: url(${proj.image});
-            transition-duration: 0.5s;
           }
           .image:hover {
             background-image: url(${proj.imageHover});
-            transition-duration: 0.5s;
           }
         `}
       </style>
