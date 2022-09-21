@@ -116,13 +116,12 @@ export default function Home({
             <h2 className={styles.subheadingText}>PROJECTS</h2>
             <hr className={styles.subheadingReverseLine} />
           </div>
+          <img src={image1} alt="prerender image" />
+          <img src={image1Hover} alt="prerender image" />
+          <img src={image2} alt="prerender image" />
+          <img src={image2Hover} alt="prerender image" />
           {projects.map((proj) => (
-            <Project
-              key={proj.id}
-              proj={proj}
-              image1={image1}
-              image1Hover={image1Hover}
-            />
+            <Project key={proj.id} proj={proj} />
           ))}
         </div>
       </section>

@@ -1,16 +1,16 @@
 import React from "react";
 import styles from "./Project.module.scss";
 
-export default function projects({ proj, image1, image1Hover }) {
+export default function projects({ proj }) {
   return (
     <div className={styles.projects}>
       <style jsx>
         {`
           .image {
-            background-image: url(${image1});
+            background-image: url(${proj.image});
           }
           .image:hover {
-            background-image: url(${image1Hover});
+            background-image: url(${proj.imageHover});
           }
         `}
       </style>
