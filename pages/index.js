@@ -116,10 +116,18 @@ export default function Home({
             <h2 className={styles.subheadingText}>PROJECTS</h2>
             <hr className={styles.subheadingReverseLine} />
           </div>
-          <img src={image1} alt="prerender image" />
-          <img src={image1Hover} alt="prerender image" />
-          <img src={image2} alt="prerender image" />
-          <img src={image2Hover} alt="prerender image" />
+          <img src={image1} alt="prerender image" style={{ display: "none" }} />
+          <img
+            src={image1Hover}
+            alt="prerender image"
+            style={{ display: "none" }}
+          />
+          <img src={image2} alt="prerender image" style={{ display: "none" }} />
+          <img
+            src={image2Hover}
+            alt="prerender image"
+            style={{ display: "none" }}
+          />
           {projects.map((proj) => (
             <Project key={proj.id} proj={proj} />
           ))}
