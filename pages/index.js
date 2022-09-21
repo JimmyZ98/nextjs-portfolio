@@ -15,15 +15,30 @@ import { motion } from "framer-motion";
 export async function getStaticProps() {
   const projects = ProjectData;
   const techlogos = LogoData;
+  const image1 = projects[0].image;
+  const image1Hover = projects[0].imageHover;
+  const image2 = projects[1].image;
+  const image2Hover = projects[1].imageHover;
   return {
     props: {
       projects,
       techlogos,
+      image1,
+      image1Hover,
+      image2,
+      image2Hover,
     },
   };
 }
 
-export default function Home({ projects, techlogos }) {
+export default function Home({
+  projects,
+  techlogos,
+  image1,
+  image1Hover,
+  image2,
+  image2Hover,
+}) {
   const animateFrom = { opacity: 0, y: 40 };
   const animateTo = { opacity: 1, y: 0 };
 
@@ -102,7 +117,12 @@ export default function Home({ projects, techlogos }) {
             <hr className={styles.subheadingReverseLine} />
           </div>
           {projects.map((proj) => (
-            <Project key={proj.id} proj={proj} />
+            <Project
+              key={proj.id}
+              proj={proj}
+              image1={image1}
+              image1Hover={image1Hover}
+            />
           ))}
         </div>
       </section>
