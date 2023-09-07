@@ -92,8 +92,9 @@ export default function Home({
           >
             I&apos;m an accountant turned
             <span> </span>
-            <span className={styles.highlight}>software developer</span>. I love
-            problem solving and building cool applications!
+            <span className={styles.highlight}>software developer</span>. I
+            enjoy building high performing applications with user-centric
+            designs. See more below!
           </motion.h2>
         </div>
       </section>
@@ -146,12 +147,12 @@ export default function Home({
               back to you as soon as possible.
             </div>
             <a
-              href="mailto: jimmy.zhen98@gmail.com"
+              href="mailto: j7zhen@uwaterloo.ca"
               target="_blank"
               rel="noreferrer"
               className={styles.contactEmail}
             >
-              jimmy.zhen98@gmail.com
+              j7zhen@uwaterloo.ca
             </a>
             <motion.div
               initial={{ opacity: 0 }}
@@ -179,7 +180,7 @@ export default function Home({
                 <ImGithub size="20px" className={styles.icon} />
               </a>
               <a
-                href="mailto: jimmy.zhen98@gmail.com"
+                href="mailto: j7zhen@uwaterloo.ca"
                 target="_blank"
                 rel="noreferrer"
               >
